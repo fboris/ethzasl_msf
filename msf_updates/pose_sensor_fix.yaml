@@ -5,10 +5,10 @@ core/core_fixed_bias: false
 
 #########IMU PARAMETERS#######
 ####### bluebird
-core/core_noise_acc: 7.84e-4
-core/core_noise_accbias: 7.84e-6
-core/core_noise_gyr: 5.23e-4
-core/core_noise_gyrbias: 5.23e-6
+core/core_noise_acc: 0.01
+core/core_noise_accbias: 0.0001
+core/core_noise_gyr: 0.001
+core/core_noise_gyrbias: 0.0001
 ####### ADIS
 #core/core_noise_acc: 0.002
 #core/core_noise_accbias: 8e-5
@@ -24,14 +24,14 @@ pose_sensor/pose_noise_p_ic: 0.0
 pose_sensor/pose_delay: 0.02
 pose_sensor/pose_noise_meas_p: 0.01
 pose_sensor/pose_noise_meas_q: 0.02
-pose_sensor/pose_initial_scale: 1
+pose_sensor/pose_initial_scale: 0.5
 
 # initialization of camera w.r.t. IMU
 #bluebird
 pose_sensor/init/q_ic/w: 0.0
-pose_sensor/init/q_ic/x: 1
-pose_sensor/init/q_ic/y: -1
-pose_sensor/init/q_ic/z: 0
+pose_sensor/init/q_ic/x: 0.0
+pose_sensor/init/q_ic/y: 1.0
+pose_sensor/init/q_ic/z: 0.0
 pose_sensor/init/p_ic/x: 0.0   
 pose_sensor/init/p_ic/y: 0.0
 pose_sensor/init/p_ic/z: 0.0
