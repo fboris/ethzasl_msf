@@ -7,7 +7,7 @@
            
           <!--remap from="msf_updates/pose_with_covariance_input" to="/bluebird/down/vslam/pose" /-->
           <!--remap from="msf_updates/pose_with_covariance_input" to="/auk/down/vslam/pose" /-->
-          <remap from="msf_updates/pose_with_covariance_input" to="/svo/pose" />
+          <remap from="msf_updates/pose_with_covariance_input" to="/vslam/pose" />
           
           <rosparam file="$(find msf_updates)/pose_sensor_fix.yaml"/>
     </node>

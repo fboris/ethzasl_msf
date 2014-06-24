@@ -14,6 +14,17 @@ core/core_noise_gyrbias: 0.00001745329
 #core/core_noise_accbias: 8e-5
 #core/core_noise_gyr: 0.0004
 #core/core_noise_gyrbias: 3e-6
+#SVO
+# pose_sensor/pose_fixed_scale: false
+# pose_sensor/pose_noise_scale: 0.0
+# pose_sensor/pose_noise_p_wv: 0.0
+# pose_sensor/pose_noise_q_wv: 0.0
+# pose_sensor/pose_noise_q_ic: 0.0
+# pose_sensor/pose_noise_p_ic: 0.0
+# pose_sensor/pose_delay: 0.008
+# pose_sensor/pose_noise_meas_p: 0.02
+# pose_sensor/pose_noise_meas_q: 0.02
+# pose_sensor/pose_initial_scale: 1
 
 #PTAM
 pose_sensor/pose_fixed_scale: false
@@ -23,15 +34,24 @@ pose_sensor/pose_noise_q_wv: 0.0
 pose_sensor/pose_noise_q_ic: 0.0
 pose_sensor/pose_noise_p_ic: 0.0
 pose_sensor/pose_delay: 0.02
-pose_sensor/pose_noise_meas_p: 0.01
+pose_sensor/pose_noise_meas_p: 0.02
 pose_sensor/pose_noise_meas_q: 0.02
-pose_sensor/pose_initial_scale: 0.5
+pose_sensor/pose_initial_scale: 1
 
 # initialization of camera w.r.t. IMU
 #bluebird
+#SVO
+# pose_sensor/init/q_ic/w: 0.0
+# pose_sensor/init/q_ic/x: 0.0
+# pose_sensor/init/q_ic/y: 0.0
+# pose_sensor/init/q_ic/z: 1.0
+# pose_sensor/init/p_ic/x: 0.0   
+# pose_sensor/init/p_ic/y: 0.0
+# pose_sensor/init/p_ic/z: 0.0
+#PTAM
 pose_sensor/init/q_ic/w: 0.0
-pose_sensor/init/q_ic/x: 0.0
-pose_sensor/init/q_ic/y: 1.0
+pose_sensor/init/q_ic/x: 1
+pose_sensor/init/q_ic/y: 0.0
 pose_sensor/init/q_ic/z: 0.0
 pose_sensor/init/p_ic/x: 0.0   
 pose_sensor/init/p_ic/y: 0.0
