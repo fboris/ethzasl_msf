@@ -5,16 +5,17 @@ core/core_fixed_bias: false
 
 #########IMU PARAMETERS#######
 ####### bluebird
-core/core_noise_acc: 0.01
-core/core_noise_accbias: 0.0001
-core/core_noise_gyr: 0.001
-core/core_noise_gyrbias: 0.0001
+core/core_noise_acc: 0.00245
+core/core_noise_accbias: 0.0000245
+core/core_noise_gyr: 0.001745329
+core/core_noise_gyrbias: 0.00001745329
 ####### ADIS
 #core/core_noise_acc: 0.002
 #core/core_noise_accbias: 8e-5
 #core/core_noise_gyr: 0.0004
 #core/core_noise_gyrbias: 3e-6
 
+#PTAM
 pose_sensor/pose_fixed_scale: false
 pose_sensor/pose_noise_scale: 0.0
 pose_sensor/pose_noise_p_wv: 0.0
